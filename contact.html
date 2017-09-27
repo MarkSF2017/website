@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(44.437039, 26.047833),
+  zoom:17,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap")
+  ,mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+
+<body>
+
+
+<div id="header">
+	<img src="banner.jpg">
+  <h1>IPOIDEN</h1>
+
+<ul id="nav_bar">
+  <li><a href="index.html">Prezentare proiect</a></li>
+  <li><a href="obiective.html">Obiective</a></li>
+  <li><a href="parteneri.html">Parteneri</a></li>
+  <li><a href="rezumat.html">Rezumat</a></li>
+  <li><a href="etape.html">Etape</a></li>
+  <li><a href="rezultate.html">Rezultate</a></li>
+  <li><a href="publicatii.html">Publicaţii</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+
+<div id="googleMap"></div>
+
+<div id="contact">
+  <p><b>Adresă</b></p>
+  <p>Splaiul Independenţei, 313</p>
+  <p>Sector 6, Bucureşti</p>
+  <p>Cod 060042</p>
+  <p>Facultatea de Energetică</p>
+  <p>telefon 0214029296</p>
+  <p>e-mail : adrian.ciocanea@yahoo.com</p>
+
+</div>
+
+
+</body>
+
+
+
+
+</body>
+
+
+</html>
